@@ -14,10 +14,21 @@ var config = {
     var role =$('#role').val().trim();
     var startdate=$('#startDate').val().trim();
     var monthlyrate=$('#MonthlyR').val().trim();
-    database.ref(employeename).push().set({
+    database.ref(employeename).push({
     employeename:employeename,
     role:role,
     startdate:startdate,
     monthlyrate:monthlyrate
     });
-  })
+    var diffDays =moment([]).diff(moment([2013, 9, 31]), 'months', true);
+    console.log(diffDays);
+      $('.input').val('');
+
+    })
+
+    database.ref().on("child_added", function(snapshot) {
+      //console.log(snapshot.val())
+      snapshot.forEach(function(childSnapshot){
+        console.log(childSnapshot.val().startdate)
+      }) 
+    })

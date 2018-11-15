@@ -1,0 +1,53 @@
+.input {
+
+    width: 100%;
+    border-radius: 1px;
+    margin: 20px;
+
+}
+
+.inputdata {
+
+
+    padding: 40px;
+}
+
+.container {
+
+    height: auto;
+    width: auto;
+    border: solid;
+}
+
+.cell {
+
+    padding: 5px;
+}
+
+#title {
+
+    height: 300px;
+    padding: 90px;
+    background-color: black;
+}
+
+#datacontainer {
+
+    height: 300px;
+}
+
+.container {
+
+    margin-bottom: 50px
+}
+
+h1 {
+
+    text-align: center;
+    color: white;
+}
+
+#inputData {
+
+    padding: 30px
+}
